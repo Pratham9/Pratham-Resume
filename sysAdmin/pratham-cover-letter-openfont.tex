@@ -1,0 +1,111 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.2 (16/9/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[]{pratham-resume-openfont}
+\usepackage{fancyhdr}
+\usepackage{datetime}
+
+\newcommand{\jobtitle}{Computer Technician }
+\newcommand{\companyname}{Kamloops Computer Centre}
+\pagestyle{fancy}
+\fancyhf{}
+\date{\today}
+\begin{document}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{Pratham}{Goyal}{ \urlstyle{same}{prathamgoyal.com}\\\
+{goyalp09@pm.me} | +1 250.879.3123
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\sectionsep
+
+\section{}
+\location{\today}
+
+\sectionsep
+\sectionsep
+
+\descript{\companyname}
+\location{945 Notre Dame Drive,} 
+\location{Kamloops, B.C. V2C 5N9} 
+
+\sectionsep
+\sectionsep
+
+\descript{RE: \jobtitle}
+
+\sectionsep
+\sectionsep
+
+\descript{Dear Ryan,} 
+
+\sectionsep
+
+\location{I am writing to apply for the \jobtitle role at \companyname. I am excited about the opportunity to join your team and contribute my skills and experience in IT support and automation.}
+
+\sectionsep
+
+\begin{tightemize}
+    \item \location{As a Systems Administrator, I have a proven track record of boosting team productivity and implementing solutions that save time and improve efficiency. For example, I was able to save 200 hours per year for my team by automating IT onboards using FreshService features, PowerShell, and Python. Additionally, I implemented a data manipulation pipeline using Power Query that saved 4 hours per week for the Payroll team.} 
+    \item \location{I am also skilled at piloting and implementing new systems and processes. I recently led the development of an employee onboarding system that will improve the experience for support services and new employees. I created a Project Charter, documentation, and a technical demo to showcase the system to stakeholders, and I was able to secure their approval to move forward with the project.}
+    \item \location{In addition to my experience in automation and project management, I am also proficient in providing IT support to users. As an IT Support Technician, I was the primary onsite and remote support technician for a medium-sized organization. I was responsible for administering the ITSM/ticketing system, Azure/Active Directories, and other tools to resolve user problems and enable people across the organization to work better. I also supported the organization's IT operations by providing service, maintaining, refurbishing, and building PCs, workstations, and mobility devices.}
+    \item \location{Finally, I have experience in implementing security solutions and training vulnerable employees. I conducted a phishing simulation and set up security awareness training for employees, which resulted in a decrease in phish-prone users by 85\%.}
+\end{tightemize}
+
+\sectionsep
+
+\location{Overall, I believe that my skills and experience make me an excellent fit for the \jobtitle role at \companyname. I am eager to learn more about the position and how I can contribute to your team. Thank you for considering my application.} 
+\sectionsep
+
+\location{Sincerely,} 
+
+\sectionsep
+\sectionsep
+\sectionsep
+\sectionsep 
+\sectionsep
+\sectionsep
+\sectionsep
+\sectionsep
+\sectionsep
+\sectionsep
+\sectionsep
+\sectionsep
+\sectionsep
+
+\descript{Pratham Goyal}
+
+\end{document}  \documentclass[]{article}

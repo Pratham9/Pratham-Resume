@@ -1,0 +1,192 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.2 (16/9/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[]{pratham-resume-openfont}
+\usepackage{fancyhdr}
+\usepackage{color}
+\definecolor{light}{rgb}{0.5, 0.5, 0.5}
+\def\light#1{{\color{light}#1}}
+ 
+\pagestyle{fancy}
+\fancyhf{}
+ 
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{Pratham}{Goyal}{ \urlstyle{same}\href{http://prathamgoyal.me}{prathamgoyal.me}\\\
+\href{mailto:goyalp09@pm.me}{goyalp09@pm.me} | +1 250.879.3123
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.34\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education}
+\subsection{Thompson Rivers \\ University} 
+\descript{Diploma in Computer Science}
+\location{Grad. Sept 2022 | Kamloops, BC}
+\sectionsep
+
+\subsection{Rukhmani Devi Sr.}
+\subsection{Secondary Collegiate}
+\location{Grad. May 2017 |  Patiala, India}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Links} 
+Github:// \href{https://https://github.com/Pratham9}{\bf Pratham9} \\
+LinkedIn://  \href{https://www.linkedin.com/in/prathamgoyal}{\bf prathamgoyal} \\
+Twitter: // \href{https://twitter.com/GoreKehnePerry}{\bf goyalperry}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Coursework}
+\subsection{Undergraduate}
+Data Structures and Algorithms \\
+Software Architecture \& Design\\
+Game Design \& Development* \\
+Advanced Web Design \& Programming* \\
+Mobile App Development* \\
+Human-Computer Interaction \\
+Database Systems \\
+Career Management \\
+{\footnotesize \textit{\textbf{(Teaching Asst *) }}} \\
+
+\sectionsep
+\subsection{Post-Graduate}
+Complete C\# Masterclass - Denis Panjuta \\
+Solution Architect Learning Plan - AWS* \\
+{\footnotesize \textit{\textbf{(In Progress *) }}} \\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\location{Expert:}
+C\# \textbullet{} PowerShell \textbullet{} Active Directories \\
+ \textbullet{} ITSM Administration \textbullet{} N-able RMM 
+ \textbullet{} Microsoft 365 \textbullet{} Googling \\ 
+\location{Confident:}
+Python \textbullet{} PHP \textbullet{} MySQL \textbullet{} JavaScript \\ \textbullet{} PowerApps \textbullet{} Server Manager \\
+\location{Familiar:}
+Sage \textbullet{} HCSS Apps \textbullet{} MS Project \textbullet{} Excede
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.65\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+\subsection{The Dawson Group}
+\descript{Systems Administrator \light{| Jan 2022 - Sept 2022 | Kamloops, BC}} 
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Boosted team productivity {\bf saving 200 hours} a year via automation of IT onboards using FreshService features, {\bf PowerShell}, and {\bf Python}. 
+\item Implemented a data manipulation pipeline and cleanup query using {\bf Power Query saving 4 hours each week} for the Payroll team.
+\item Piloted an employee onboarding system which on implementation will be a better experience for support services and new employees, made Project Charter, {\bf Documentation}, and got Stakeholder acceptance via Showcase of a {\bf Technical Demo}.
+\item Conducted phishing simulation and set up {\bf security awareness training} for vulnerable employees, leading to a decrease in phish-prone users by {\bf 85\%}.
+\end{tightemize}
+\sectionsep
+
+\descript{IT Support Technician \light{| Sept 2021 - Dec 2021 | Kamloops, BC}}
+\begin{tightemize}
+\item Functioned as the first point of contact for users’ technical problems as the primary onsite and {\bf remote support technician} for a medium size organization.
+\item Administered ITSM/ticketing system, {\bf Azure/Active Directories}, VoIP Console, Digital Signage, and managed Mobility Portal. Used to {\bf resolve user problems} and enabled people across the organization to work better.
+\item Supported Information Technology operations within the organization by {\bf providing service, maintaining, refurbishing, and building} PCs, workstations, and mobility devices.
+\end{tightemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Technical Projects
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Technical Projects}
+\subsection{Employee Onboarding Automation}
+\descript{Design \& Development Lead \light{ | Nov 2021 – July 2022}}
+Configured an automation such that when managers submit information for onboarding via ticketing system, the system validates information and wait for approval by IT Admin, after approval a user account is created automatically within 60 seconds and synced with AD.
+\begin{tightemize}
+    \item[] {\bf Tools}: PowerShell, Excel, FreshService Orchestration Features, Active Directory, Azure Active Directory, Windows Server 2019, Remote Desktop. \\
+    \item Involved {\bf PowerShell scripting}, connecting with the ITSM system on a test server, recording, resolving and reporting bugs to the developers. 
+    \item Validated project in test environment and transferred to a production environment, with documentation and cleaner code.
+    \item Resulted in {\bf savings of 30 minutes} per onboard and elimination of human-error.
+\end{tightemize}
+
+\sectionsep
+
+\end{minipage} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Additional Information
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Additional Information}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+    \item Volunteered for United Way Campaign and helped paint the local Food Hub Project Storefront.
+    \item Organized the Global Game Jam for the 3rd time at TRU which involved getting funding, {\bf event planning}, and execution.
+    \item Promoted to {\bf President} of the {\bf Game Development Club} and set up a board to advance club activities.
+    \item Currently preparing for {\bf AWS Solutions Architect}.
+\end{tightemize}
+
+\end{document}
+\documentclass[]{article}
